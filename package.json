@@ -4,10 +4,25 @@
   "description": "realizado con HTML5, CSS, y javascript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html"
+    "build": "webpack --config webpack.config.js",
+    "prod": "webpack --config webpackprod.config.js",
+    "test": "node index.js --unhandled-rejections=strict",
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "AldoRmzCode",
+  "license": "ISC",
+  "bugs": {
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
 }
